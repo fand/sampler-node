@@ -25,11 +25,18 @@ class SamplerNode extends AltAudioNode {
     return this._out.gain;
   }
 
-  start (i, time = 0) {
-    if (i == null || !this._nodes[i]) {
+  start (key, time = 0) {
+    if (key == null || !this._nodes[key]) {
       return;
     }
-    this._nodes[i].play(time);
+    this._nodes[key].start(time);
+  }
+
+  stop (key, time = 0) {
+    if (key == null || !this._nodes[key]) {
+      return;
+    }
+    this._nodes[key].stop(time);
   }
 
   connect (...args) {

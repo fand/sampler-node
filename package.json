@@ -7,7 +7,7 @@
     "url": "https://github.com/fand/sampler-node/issues"
   },
   "dependencies": {
-    "@fand/sample-node": "0.0.1",
+    "@fand/sample-node": "^0.1.0",
     "altnode.alt-audio-node": "^0.2.0"
   },
   "devDependencies": {
